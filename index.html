@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Sudoku Game and Solver</title>
+    <link rel="stylesheet" href="styles.css"/>
+    <script src = "index.js"></script>
+  </head>
+  <body>
+    <h1>
+        Sudoku
+    </h1>
+    <div id = "settings">
+      <div class = "difficulty title">
+        <h2>
+          Difficulty
+        </h2>
+        <label>
+          <input id = "diff-easy" type = "radio" name = "difficulty" value = "easy" checked>
+          Easy
+        </label>
+        <label>
+          <input id = "diff-medium" type = "radio" name = "difficulty" value = "medium">
+          Medium
+        </label>
+        <label>
+          <input id = "diff-hard" type = "radio" name = "difficulty" value = "hard">
+          Hard
+        </label>
+      </div>
+      <div class = "time title">
+        <h2>
+          Time
+        </h2>
+        <label>
+          <input id = "time-five" type = "radio" name = "time" value = "five" checked>
+          5 minutes
+        </label>
+        <label>
+          <input id = "time-ten" type = "radio" name = "time" value = "ten">
+          10 minutes
+        </label>
+        <label>
+          <input id = "time-unliimited" type = "radio" name = "time" value = "unlimited">
+          Unlimited
+        </label>
+      </div>
+      <div class = "theme title">
+        <h2>
+          Theme
+        </h2>
+        <label>
+          <input id = "theme-light" type = "radio" name = "theme" value = "light" checked>
+          Light
+        </label>
+        <label>
+          <input id = "theme-dark" type = "radio" name = "theme" value = "dark">
+          Dark
+        </label>
+      </div>
+    </div>
+    <div id = "buttons">
+      <div id = "start">
+        <button>Start New Game</button>
+      </div>
+      <div id = "solve">
+        <button>Backtracking Algorithm</button>
+      </div>
+    </div>
+    <div id = "hud">
+      <p id = "timer">
+      </p>
+      <p id = "lives">
+      </p>
+    </div>
+    <div id = "game">
+      <div id = "board">
+      </div>
+      <div id = "number-container" class = "hidden">
+        <div id = "1">1</div>
+        <div id = "2">2</div>
+        <div id = "3">3</div>
+        <div id = "4">4</div>
+        <div id = "5">5</div>
+        <div id = "6">6</div>
+        <div id = "7">7</div>
+        <div id = "8">8</div>
+        <div id = "9">9</div>
+      </div>
+    </div>
+
+  </body>
+</html>
